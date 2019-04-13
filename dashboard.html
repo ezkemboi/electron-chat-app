@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Magic Bot</title>
+    <link href="static/css/index.css" rel="stylesheet" />
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container chat-container">
+    <div class="row body-sidebar-content">
+      <div class="col-3 sidebar">
+        <form class="search-form">
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Search chat"
+            />
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-3">
+            <div class="profile"><div class="is-online"></div></div>
+          </div>
+          <div class="col">
+            magic bot
+          </div>
+        </div>
+      </div>
+      <div class="col body">
+        <div class="card chat-card">
+          <div class="card-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-1">
+                  <div class="profile"><div class="is-online"></div></div>
+                </div>
+                <div class="col">
+                  Chat with magic bot
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card" id="chat-bot">
+              <div class="card-body">
+                <p class="card-text" id="load-user-message">
+                  Your message goes here
+                </p>
+              </div>
+            </div>
+            <div class="card" id="chat-user">
+              <div class="card-body">
+                <p class="card-text" id="load-bot-message">
+                  Say Hi to Bot to get started.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="POST" id="send-message-to-bot">
+          <div class="form-group" id="message-upload-text-area">
+            <textarea
+              class="form-control"
+              placeholder="Write your message"
+              id="chat-area"
+              rows="2"
+            ></textarea>
+            <!-- <input type="file" name="file-upload" /> -->
+          </div>
+          <button class="btn btn-primary chat-button">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="getmessageapi.js"></script>
+  </body>
+</html>

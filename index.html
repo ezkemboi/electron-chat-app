@@ -45,22 +45,23 @@
               <hr class="divider my-2">
             </div>
             <div class="col-lg-8 align-self-baseline">
-              <p class="text-black font-weight-heavy mb-2 fore-words">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
-              <form class="">
+              <p class="text-black font-weight-heavy mb-2 fore-words">This is a magical chatbox. Get access our system by Logging In below</p>
+                <form 
+                  class="" method="POST" id="login-form">
                       <div class="form-group">
-                        <div><label for="formGroupExampleInput" class="text-black text-center input">Username</label></div>
-                        <input type="text" class=" input text-center" placeholder="Enter Username">
+                        <div><label for="username" class="text-black text-center input">Username</label></div>
+                        <input type="text" class=" input text-center" id="username" name="username" placeholder="Enter Username">
                       </div>
                       <div class="form-group">
-                        <div><label for="exampleInputPassword1" class="text-black input">Password</label></div>
-                        <input type="password" class=" input text-center"  placeholder="Enter Password">
+                        <div><label for="password" class="text-black input">Password</label></div>
+                        <input type="password" class=" input text-center" id="password" name="password" placeholder="Enter Password">
                       </div>
                       <div class="form-row text-center">
                           <div class="col-12">
-                              <button type="submit" class="btn submit-btn"><a href="templates/dashboard.html" class="text-blue">Submit</a></button>
+                              <button type="submit" class="btn submit-btn" style='background: rgb(36, 200, 241); color:white;'>Submit</button>
                           </div>
                         </div>
-                  </form>
+                </form>
             </div>
           </div>
         </div>
@@ -74,6 +75,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="api.js"></script>
 
   <!-- Custom scripts for this template -->
   <script src="js/coming-soon.min.js"></script>
